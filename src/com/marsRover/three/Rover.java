@@ -50,4 +50,10 @@ public class Rover {
         setSDirection();
         return stateToString();
     }
+
+    public String turnLeft() {
+        direction++;
+        setSDirection();
+        return stateToString();
+    }
 }
