@@ -11,7 +11,6 @@ public class ParserTest {
 
     @Test
     public void shouldParseStringToCommands() {
-        LeftCommand mockLeftCommand = mock(LeftCommand.class);
         Lexer mockLexer = mock(Lexer.class);
         Parser parser = new Parser(mockLexer);
         ArrayList<String> lexedCommands = new ArrayList<>();
