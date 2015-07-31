@@ -11,9 +11,4 @@ public class LeftCommand implements RoverCommands{
     public String execute() {
         return rover.turnLeft();
     }
-
-    @Override
-    public boolean hasName(String name) {
-        return false;
-    }
 }

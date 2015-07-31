@@ -12,9 +12,4 @@ public class RightCommand implements RoverCommands{
     public String execute() {
         return rover.turnRight();
     }
-
-    @Override
-    public boolean hasName(String name) {
-        return false;
-    }
 }

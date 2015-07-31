@@ -18,7 +18,6 @@ public class ParserTest {
         lexedCommands.add("L");
 
         when(mockLexer.lexCommands("L")).thenReturn(lexedCommands);
-        when(mockLeftCommand.hasName("L")).thenReturn(true);
 
         assertEquals(LeftCommand.class, parser.parseCommands("L").get(0).getClass());
     }

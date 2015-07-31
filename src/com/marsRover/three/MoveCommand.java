@@ -12,9 +12,4 @@ public class MoveCommand implements RoverCommands {
     public String execute() {
         return rover.move();
     }
-
-    @Override
-    public boolean hasName(String name) {
-        return false;
-    }
 }
