@@ -1,6 +1,6 @@
 package com.marsRover.three;
 
-public class MoveCommand implements  RoverCommands {
+public class MoveCommand implements RoverCommands {
 
     Rover rover;
 
@@ -11,5 +11,10 @@ public class MoveCommand implements  RoverCommands {
     @Override
     public String execute() {
         return rover.move();
+    }
+
+    @Override
+    public boolean hasName(String name) {
+        return false;
     }
 }
