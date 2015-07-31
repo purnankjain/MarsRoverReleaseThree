@@ -28,4 +28,16 @@ public class Parser {
         }
         return commandList;
     }
+
+    public Rover parseRover(String userInput) {
+        ArrayList<String> states = lexer.lexStates(userInput);
+        int x;
+        int y;
+        String sDirection;
+        x = Integer.parseInt(states.get(0));
+        y = Integer.parseInt(states.get(1));
+        sDirection = states.get(2);
+        rover = new Rover(x, y, sDirection);
+        return rover;
+    }
 }

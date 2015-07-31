@@ -14,6 +14,26 @@ public class Rover {
         setSDirection();
     }
 
+    public Rover(int x, int y, String sDirection) {
+        this.x = x;
+        this.y = y;
+        this.sDirection = sDirection;
+        setDirection();
+    }
+
+    private void setDirection() {
+        switch (sDirection) {
+            case "N" : direction = 0;
+                break;
+            case "W" : direction = 1;
+                break;
+            case "S" : direction = 2;
+                break;
+            case "E" : direction = 3;
+                break;
+        }
+    }
+
     private void setSDirection() {
         switch (direction) {
             case 0 : sDirection = "N";
