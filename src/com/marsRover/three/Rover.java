@@ -20,6 +20,8 @@ public class Rover {
         switch (direction) {
             case 0 : y++;
                 break;
+            case 1 : x--;
+                break;
             case 2 : y--;
                 break;
         }
