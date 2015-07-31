@@ -28,4 +28,14 @@ public class LexerTest {
 
         assertEquals(states, lexer.lexStates("0 0 N"));
     }
+
+    @Test
+    public void shouldLexPlateauState() {
+        Lexer lexer = new Lexer();
+        ArrayList<String> states = new ArrayList<String>();
+        states.add("5");
+        states.add("5");
+
+        assertEquals(states, lexer.lexStates("5 5"));
+    }
 }
