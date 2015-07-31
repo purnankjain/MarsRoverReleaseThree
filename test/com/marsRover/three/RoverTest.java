@@ -27,4 +27,11 @@ public class RoverTest {
 
         assertEquals("0, 1, N", rover.move());
     }
+
+    @Test
+    public void shouldMoveRightWhenWest() {
+        Rover rover = new Rover(1, 1, 3);
+
+        assertEquals("2, 1, N", rover.move());
+    }
 }

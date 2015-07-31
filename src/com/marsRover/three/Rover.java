@@ -24,6 +24,8 @@ public class Rover {
                 break;
             case 2 : y--;
                 break;
+            case 3 : x++;
+                break;
         }
         return stateToString();
     }
