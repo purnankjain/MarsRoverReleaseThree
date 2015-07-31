@@ -11,4 +11,13 @@ public class Lexer {
         }
         return temp;
     }
+
+    public ArrayList<String> lexStates(String states) {
+        String[] tempStringArray = states.split(" ");
+        ArrayList<String> temp = new ArrayList<String>();
+        for(String str : tempStringArray) {
+            temp.add(str);
+        }
+        return temp;
+    }
 }
