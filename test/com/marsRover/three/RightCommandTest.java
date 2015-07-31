@@ -6,6 +6,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
 public class RightCommandTest {
+
     @Test
     public void shouldCommandRoverToTurnRight() {
         Rover mockRover = mock(Rover.class);
@@ -15,5 +16,4 @@ public class RightCommandTest {
 
         verify(mockRover).turnRight();
     }
-
 }
