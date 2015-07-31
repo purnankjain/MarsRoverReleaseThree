@@ -17,7 +17,12 @@ public class Rover {
     }
 
     public String move() {
-        y++;
+        switch (direction) {
+            case 0 : y++;
+                break;
+            case 2 : y--;
+                break;
+        }
         return stateToString();
     }
 }
