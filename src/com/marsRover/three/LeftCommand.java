@@ -1,6 +1,6 @@
 package com.marsRover.three;
 
-public class LeftCommand {
+public class LeftCommand implements RoverCommands{
 
     Rover rover;
 
@@ -9,7 +9,6 @@ public class LeftCommand {
     }
 
     public String execute() {
-        rover.turnLeft();
-        return null;
+        return rover.turnLeft();
     }
 }
