@@ -18,4 +18,8 @@ public class View {
         }
         return null;
     }
+
+    public void printToConsole(String toPrint) {
+        System.out.println(toPrint);
+    }
 }

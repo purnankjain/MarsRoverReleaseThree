@@ -39,4 +39,11 @@ public class ViewTest {
         assertEquals(toCheck, view.readUserInput());
     }
 
+    @Test
+    public void checkOutput() {
+        view.printToConsole("Hello");
+
+        assertEquals("Hello\n", byteArrayOutputStream.toString());
+    }
+
 }
