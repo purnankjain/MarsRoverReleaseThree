@@ -46,13 +46,13 @@ public class Rover {
     }
 
     public String turnRight() {
-        direction--;
+        direction = (4 + direction - 1) % 4;
         setSDirection();
         return stateToString();
     }
 
     public String turnLeft() {
-        direction++;
+        direction = (direction + 1) % 4;
         setSDirection();
         return stateToString();
     }

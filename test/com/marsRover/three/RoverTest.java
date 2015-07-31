@@ -48,4 +48,11 @@ public class RoverTest {
 
         assertEquals("1, 1, S", rover.turnLeft());
     }
+
+    @Test
+    public void shouldTurnLeftToNorthOnLeftFromEast() {
+        Rover rover = new Rover(1, 1, 3);
+
+        assertEquals("1, 1, N", rover.turnLeft());
+    }
 }
